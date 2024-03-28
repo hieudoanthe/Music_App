@@ -1,0 +1,150 @@
+{
+   "checksum": "7bd70e4a56981ee5ecaacdb9591f821e",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13286895435700003",
+            "date_last_used": "0",
+            "guid": "257eb645-e7e1-436c-89cb-07c4231acc8d",
+            "id": "12",
+            "name": "Typing Lessons | 6th Grade Vocabulary - Typing.com",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.typing.com/student/lesson/29371/6th-grade-vocabulary"
+         }, {
+            "date_added": "13293705456723016",
+            "date_last_used": "0",
+            "guid": "c1f892c2-249a-49e5-94e7-3a541d63df6a",
+            "id": "13",
+            "name": "",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.facebook.com/"
+         }, {
+            "date_added": "13293785319720223",
+            "date_last_used": "0",
+            "guid": "b81838bd-a9ec-4ec2-b3f8-7e54d34dd74f",
+            "id": "14",
+            "name": "Cambridge Dictionary | Từ điển tiếng Anh, Bản dịch & Từ điển từ đồng nghĩa",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://dictionary.cambridge.org/vi/"
+         }, {
+            "date_added": "13308376670349078",
+            "date_last_used": "0",
+            "guid": "a9d4dca3-6f44-4e86-9d1f-3c5d38946b01",
+            "id": "15",
+            "name": "0221010652HieuDT's groups - Codeforces",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://codeforces.com/groups/my"
+         }, {
+            "date_added": "13300968940610037",
+            "date_last_used": "0",
+            "guid": "5dbf0b16-6005-4f95-9899-95dbe253f7a7",
+            "id": "16",
+            "name": "Education management",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://qldtbeta.phenikaa-uni.edu.vn/congsinhvien/index.aspx#dangkyhoc"
+         }, {
+            "date_added": "13311855222922473",
+            "date_last_used": "0",
+            "guid": "dd258125-c046-487b-85eb-e0e74e537d03",
+            "id": "17",
+            "name": "Home Page - Select or create a notebook",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://jupyter.pail.phenikaa-uni.edu.vn/user/21010652@st.phenikaa-uni.edu.vn/tree"
+         } ],
+         "date_added": "13356068826561284",
+         "date_last_used": "0",
+         "date_modified": "13311855222922473",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favorites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "date_added": "13286895435700003",
+            "date_last_used": "0",
+            "guid": "933be36a-f2a1-460f-951d-0adf059987e3",
+            "id": "7",
+            "name": "Typing Lessons | 6th Grade Vocabulary - Typing.com",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.typing.com/student/lesson/29371/6th-grade-vocabulary"
+         }, {
+            "date_added": "13306689659919858",
+            "date_last_used": "0",
+            "guid": "fc9f0b0d-ce2a-4eeb-bba7-097608c02769",
+            "id": "8",
+            "name": "Genshin Impact Interactive World Map",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://genshin-impact-map.appsample.com/?map=teyvat#"
+         }, {
+            "date_added": "13317960831553828",
+            "date_last_used": "0",
+            "guid": "a2ad171d-faa0-4fe4-9235-1d444604339c",
+            "id": "9",
+            "name": "PHENIKAA - CÔNG TÁC SINH VIÊN",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://ctsv.phenikaa-uni.edu.vn/"
+         }, {
+            "date_added": "13318144942002091",
+            "date_last_used": "0",
+            "guid": "d79415b6-1575-4289-bd73-881ebd0decd1",
+            "id": "10",
+            "name": "Thế Hiếu (@mew.1408) | TikTok",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.tiktok.com/@mew.1408?lang=vi-VN"
+         }, {
+            "date_added": "13322195937487287",
+            "date_last_used": "0",
+            "guid": "4dd27900-5b2d-4521-a063-97f1090debf7",
+            "id": "11",
+            "name": "New chat",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://chat.openai.com/chat"
+         } ],
+         "date_added": "13356068826561291",
+         "date_last_used": "0",
+         "date_modified": "13322195937487287",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13356068826561292",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favorites",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CjEKDgiIgQISCEBHB4OOAQAAEgAqGEtUUytzWENhMVBDOUF1UkNHRFVrNkE9PUgDoAYMEqgBCBESowEKHGxqL2g2eGMzc2kxZlNQVFpRejlLQmJ2VjdYcz0SJGRkMjU4MTI1LWMwNDYtNDg3Yi04NWViLWUwZTc0ZTUzN2QwMxgAIAAoADC178yZyzE4v7nDuP4wQL+5w7j+MEoceEovMkxmOUJESkQ4d2hqMXF2Z3JYc1JPSjY0PVofIh3/SERtbURCMm5OcjBCM1BVUy9jUkdVdTlTMTJ3PWVT4rYFEqgBCA0SowEKHHZMMXhGclM5SkI4aVVTNTBFNi9sSk00NWtFND0SJGMxZjg5MmMyLTI0OWEtNDllNS05NGU3LTNhNTQxZDYzZGY2YRgAIAIoAjC5jp2Y6DE4oZG3yYEwQJ2FnZjoMUocZEk1MGpGSUFNTGkxNDFlM3dhTDRTUlEyemprPVofIh33aERPb1pjaVAyeXR5cnFsOWV6WUZ6N1Vwem5NPWXr/HX3EqgBCAwSowEKHDRtekU0SEtHQ1paMXlCNmJRZmlwN2xNcWtWZz0SJDI1N2ViNjQ1LWU3ZTEtNDM2Yy04OWNiLTA3YzQyMzFhY2M4ZBgAIAAoADDEwoaG0DA4gZG3yYEwQIGRt8mBMEocUGhMNng5dkczRlZYMGRJc3hwTVJMUTdBUjlFPVofIh3eNEc0ZExhUVRneW94cDBNQnRTcEM4Tzh0ZER3PWXCazxjEokBCAEShAEKHHl4Si82ZnZrZWNyN2twNUVRekI0dFdMcGRiRT0SJDgzNDk4YmMzLTc5ZjMtNTRkZi1hYzg0LWU4YzRkY2MyYTljZhgAIAAoADCFgdjwozA47aXir/MvQO2l4q/zL0ocYVJDV0xnaEY5YjVJbnFLSUR2dUovanZRa0ZjPVoAZQAAAAASqAEIDhKjAQoca29tRGpabDBDYkF3UjVHM1ZFL1UralA5djZVPRIkYjgxODM4YmQtYTllYy00ZWMyLWIzZjgtN2U1NGQzNGRkNzRmGAAgAigCMLiOnZjoMTjykLfJgTBAnoWdmOgxShxyR2pKT2tJVlpBT1ZERjJ1VjVpVzh3WTRUOFk9Wh8iHf16cGI2M0VHT0xuc0RXYTQzRDhaNjVsWmFwS0k9ZSdre6oSqAEIDxKjAQocU1ZSYmx3bDUxQk9mS2VXOVQ1aTdGUERkN3ZNPRIkYTlkNGRjYTMtNmY0NC00ZTg2LTlkMWYtM2M1ZDM4OTQ2YjAxGAAgACgAMLPvzJnLMTj6ucO4/jBA+rnDuP4wShxJMlZLSGY2SzZTNzFGdFgwS25qTGpKc3RVakU9Wh8iHf5TcCs0Nk5uL20wZDFSeEdSZ1V2Q0JJRHRmeW89ZfmgtQISqAEICxKjAQocVGh0M0FaSU0zdnI4bCtCR0dENUo1b0FKZzZrPRIkNGRkMjc5MDAtNWIyZC00NTIxLWEwNjMtOTdmMTA5MGRlYmY3GAAgACgAMIe3w7j+MDi9uMO4/jBAvbjDuP4wShxSQXYzUmtwQnBlT3BIWUNrRUZFSFVjL1dGL009Wh8iHf1GdTF1L0I3b05GK1Uwd1JsRGFsUWJBaUxuQTQ9ZWkbIvMSqAEICRKjAQocUk01ck5sSHZVc2grY1JoR0tteDVHYnhGaGJvPRIkYTJhZDE3MWQtZmFhMC00ZmU0LTkyMzUtMWQ0NDQ2MDQzMzljGAAgACgAMIy3w7j+MDiqucO4/jBAqrnDuP4wShxjZUt3ckxVOE16bmorb2RIQjhCVmZJSGkzSUk9Wh8iHelZSjlQYlNWY0ZoTVJyWTlYb3FTaUY2ZFZaUTA9ZQRPBoISqAEIEBKjAQocelJGcE9wbDM2N0QxakNpb0dZOTlSeHh0RnJBPRIkNWRiZjBiMTYtNjAwNS00Zjk1LTk4OTktOTVkYmUyNTNmN2E3GAAgACgAMLLvzJnLMTjUt8O4/jBA1LfDuP4wShxxZjMvZ2k2cEFzM3FZdnBXYmtpTjkvUThGWkU9Wh8iHf9HQXdnWTZVM0l1Q3JnSDQ3V2RETGpEZnF2ZGs9ZRjDBdgSiQEIAxKEAQocbmpnRHU4OGVDcnZYcDg2cEQ3ZkhHY3FGcDg4PRIkMzE5ZDYzZDMtZjQ2Ny01NzMzLTg2NTktODJjNmYzMDdhMzY4GAAgACgAMIWB2PCjMDi7puKv8y9Au6bir/MvShx5ek5CMDFjbjU0QTdjUlUwdVQrL1BnbVR0VW89WgBlAAAAABKoAQgIEqMBChxBMDYxK3AxUXFXaFpzRjNJdk96Z3NnbSsvOGM9EiRmYzlmMGIwZC1jZTJhLTRlZWItYmJhNy0wOTc2MDhjMDI3NjkYACAAKAAwirfDuP4wOIG5w7j+MECBucO4/jBKHGxCRlFEeDRPM3VTVkxyN3NqdlBIY05NY21wST1aHyIdp0gwbWV5bUo1VzhNOFAzZWswVlFjTlZXRTZZOD1lB3bsnRKoAQgKEqMBChx5dFRQSXhsM3IrSW5oUHoxUG5SRGtneWRJSjA9EiRkNzk0MTViNi0xNTc1LTQyODktYmQ3My04ODFlYmQwZGVjZDEYACAAKAAwg8Tjw8wxOOq4w7j+MEDquMO4/jBKHFlSZEltVzg2YnVOcjRrMVNWeDMwSEpiWGQ2dz1aHyId9Eloa1gwMjg4Q3ArY1hOT0MyMTUzSE5zVnk3WT1ls7S+ZxKnAQgHEqIBChxWWUdmeVliQ0FzSUFNSDhPRGkzTm5rVjNGV2M9EiQ5MzNiZTM2YS1mMmExLTQ2MGYtOTUxZC0wYWRmMDU5OTg3ZTMYACAAKAAwiLfDuP4wONK4w7j+MEDSuMO4/jBKHHdSVXpGN3IyWEhqZTBvZ3JZRmhSa1RSendjZz1aHiIcTmJoYU9FaUlWV3hkRGhMY0JQZTV2NmpUbHEwPWXCazxjEokBCAIShAEKHFljU1RvbnZFU1B3cUNzNEwyY3JWaHY2OEw5OD0SJDZmYjAxOTk3LWExMjctNWUyZC1iZjkwLThkZDkxOTRkZWFkNhgAIAAoADCFgdjwozA4jKbir/MvQIym4q/zL0ocb1BWa2h3QlJiVjY1S0NXUjIrSU9OSFdvT3U4PVoAZQAAAAAwADgA",
+   "version": 1
+}

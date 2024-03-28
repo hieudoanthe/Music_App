@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">903739057659</string>
+    <string name="google_api_key" translatable="false">AIzaSyDJUzfywNCVBK6qWHvyuoflnVP8TlXRf8c</string>
+    <string name="google_app_id" translatable="false">1:903739057659:android:ee7d35fe42d159e158975e</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDJUzfywNCVBK6qWHvyuoflnVP8TlXRf8c</string>
+    <string name="google_storage_bucket" translatable="false">music-app-9464c.appspot.com</string>
+    <string name="project_id" translatable="false">music-app-9464c</string>
+</resources>
