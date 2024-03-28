@@ -1,4 +1,10 @@
-#Tue Mar 26 21:56:07 ICT 2024
-base.0=/home/nguyenan362/mobile/Music_Player_App/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
-renamed.0=classes.dex
+#Thu Mar 28 11:03:36 HOVT 2024
+base.0=E\:\\Mew\\Du_An_Mobile\\Music_App\\music_player_app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+base.1=E\:\\Mew\\Du_An_Mobile\\Music_App\\music_player_app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
+base.2=E\:\\Mew\\Du_An_Mobile\\Music_App\\music_player_app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes3.dex
 path.0=classes.dex
+path.1=classes2.dex
+path.2=classes3.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
+renamed.2=classes3.dex

@@ -30,12 +30,12 @@
 20    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
 20-->[com.google.android.gms:play-services-measurement-api:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\0599a152d23115017a927cb4c45c6935\transformed\jetified-play-services-measurement-api-21.6.1\AndroidManifest.xml:27:5-82
 20-->[com.google.android.gms:play-services-measurement-api:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\0599a152d23115017a927cb4c45c6935\transformed\jetified-play-services-measurement-api-21.6.1\AndroidManifest.xml:27:22-79
-21    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-21-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\HieuDoan\.gradle\caches\transforms-3\9795f935fe855d399d23b12e1dfb271c\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:9:5-98
-21-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\HieuDoan\.gradle\caches\transforms-3\9795f935fe855d399d23b12e1dfb271c\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:9:22-95
-22    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-22-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:26:5-110
-22-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:26:22-107
+21    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+21-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:26:5-110
+21-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:26:22-107
+22    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+22-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\HieuDoan\.gradle\caches\transforms-3\9795f935fe855d399d23b12e1dfb271c\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:9:5-98
+22-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\HieuDoan\.gradle\caches\transforms-3\9795f935fe855d399d23b12e1dfb271c\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:9:22-95
 23
 24    <permission
 24-->[androidx.core:core:1.9.0] C:\Users\HieuDoan\.gradle\caches\transforms-3\d9a7bda5b0a0d2fc08828ff145bfcb70\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
@@ -49,7 +49,7 @@
 28-->[androidx.core:core:1.9.0] C:\Users\HieuDoan\.gradle\caches\transforms-3\d9a7bda5b0a0d2fc08828ff145bfcb70\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 29
 30    <application
-31        android:name="android.app.Application"
+31        android:name="io.flutter.app.FlutterMultiDexApplication"
 32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 32-->[androidx.core:core:1.9.0] C:\Users\HieuDoan\.gradle\caches\transforms-3\d9a7bda5b0a0d2fc08828ff145bfcb70\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 33        android:debuggable="true"
@@ -272,83 +272,82 @@
 162            android:resource="@xml/ga_ad_services_config" />
 162-->[com.google.android.gms:play-services-measurement-api:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\0599a152d23115017a927cb4c45c6935\transformed\jetified-play-services-measurement-api-21.6.1\AndroidManifest.xml:32:13-58
 163
-164        <uses-library
-164-->[androidx.window:window:1.0.0-beta04] C:\Users\HieuDoan\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
-165            android:name="androidx.window.extensions"
-165-->[androidx.window:window:1.0.0-beta04] C:\Users\HieuDoan\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
-166            android:required="false" />
-166-->[androidx.window:window:1.0.0-beta04] C:\Users\HieuDoan\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
-167        <uses-library
-167-->[androidx.window:window:1.0.0-beta04] C:\Users\HieuDoan\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
-168            android:name="androidx.window.sidecar"
-168-->[androidx.window:window:1.0.0-beta04] C:\Users\HieuDoan\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
-169            android:required="false" />
-169-->[androidx.window:window:1.0.0-beta04] C:\Users\HieuDoan\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+164        <provider
+164-->[com.google.firebase:firebase-common:20.4.3] C:\Users\HieuDoan\.gradle\caches\transforms-3\dc0ab3983dbb0c1d6484f240444a6549\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:23:9-28:39
+165            android:name="com.google.firebase.provider.FirebaseInitProvider"
+165-->[com.google.firebase:firebase-common:20.4.3] C:\Users\HieuDoan\.gradle\caches\transforms-3\dc0ab3983dbb0c1d6484f240444a6549\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:24:13-77
+166            android:authorities="com.example.music_player_app.firebaseinitprovider"
+166-->[com.google.firebase:firebase-common:20.4.3] C:\Users\HieuDoan\.gradle\caches\transforms-3\dc0ab3983dbb0c1d6484f240444a6549\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:25:13-72
+167            android:directBootAware="true"
+167-->[com.google.firebase:firebase-common:20.4.3] C:\Users\HieuDoan\.gradle\caches\transforms-3\dc0ab3983dbb0c1d6484f240444a6549\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:26:13-43
+168            android:exported="false"
+168-->[com.google.firebase:firebase-common:20.4.3] C:\Users\HieuDoan\.gradle\caches\transforms-3\dc0ab3983dbb0c1d6484f240444a6549\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:27:13-37
+169            android:initOrder="100" />
+169-->[com.google.firebase:firebase-common:20.4.3] C:\Users\HieuDoan\.gradle\caches\transforms-3\dc0ab3983dbb0c1d6484f240444a6549\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:28:13-36
 170
-171        <provider
-171-->[com.google.firebase:firebase-common:20.4.3] C:\Users\HieuDoan\.gradle\caches\transforms-3\dc0ab3983dbb0c1d6484f240444a6549\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:23:9-28:39
-172            android:name="com.google.firebase.provider.FirebaseInitProvider"
-172-->[com.google.firebase:firebase-common:20.4.3] C:\Users\HieuDoan\.gradle\caches\transforms-3\dc0ab3983dbb0c1d6484f240444a6549\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:24:13-77
-173            android:authorities="com.example.music_player_app.firebaseinitprovider"
-173-->[com.google.firebase:firebase-common:20.4.3] C:\Users\HieuDoan\.gradle\caches\transforms-3\dc0ab3983dbb0c1d6484f240444a6549\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:25:13-72
-174            android:directBootAware="true"
-174-->[com.google.firebase:firebase-common:20.4.3] C:\Users\HieuDoan\.gradle\caches\transforms-3\dc0ab3983dbb0c1d6484f240444a6549\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:26:13-43
-175            android:exported="false"
-175-->[com.google.firebase:firebase-common:20.4.3] C:\Users\HieuDoan\.gradle\caches\transforms-3\dc0ab3983dbb0c1d6484f240444a6549\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:27:13-37
-176            android:initOrder="100" />
-176-->[com.google.firebase:firebase-common:20.4.3] C:\Users\HieuDoan\.gradle\caches\transforms-3\dc0ab3983dbb0c1d6484f240444a6549\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:28:13-36
-177
-178        <receiver
-178-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:29:9-33:20
-179            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-179-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:30:13-85
-180            android:enabled="true"
-180-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:31:13-35
-181            android:exported="false" >
-181-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:32:13-37
-182        </receiver>
-183
-184        <service
-184-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:35:9-38:40
-185            android:name="com.google.android.gms.measurement.AppMeasurementService"
-185-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:36:13-84
-186            android:enabled="true"
-186-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:37:13-35
-187            android:exported="false" />
-187-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:38:13-37
-188        <service
-188-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:39:9-43:72
-189            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-189-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:40:13-87
-190            android:enabled="true"
-190-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:41:13-35
-191            android:exported="false"
-191-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:42:13-37
-192            android:permission="android.permission.BIND_JOB_SERVICE" />
-192-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:43:13-69
-193
-194        <uses-library
-194-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\HieuDoan\.gradle\caches\transforms-3\29b2afadb5d762db459808f64547fddf\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:23:9-25:40
-195            android:name="android.ext.adservices"
-195-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\HieuDoan\.gradle\caches\transforms-3\29b2afadb5d762db459808f64547fddf\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:24:13-50
-196            android:required="false" />
-196-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\HieuDoan\.gradle\caches\transforms-3\29b2afadb5d762db459808f64547fddf\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:25:13-37
-197
-198        <activity
-198-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\HieuDoan\.gradle\caches\transforms-3\e0a8793a7a85d6e071b7a743c9adf075\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
-199            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-199-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\HieuDoan\.gradle\caches\transforms-3\e0a8793a7a85d6e071b7a743c9adf075\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
-200            android:exported="false"
-200-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\HieuDoan\.gradle\caches\transforms-3\e0a8793a7a85d6e071b7a743c9adf075\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
-201            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-201-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\HieuDoan\.gradle\caches\transforms-3\e0a8793a7a85d6e071b7a743c9adf075\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
-202
-203        <meta-data
-203-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\HieuDoan\.gradle\caches\transforms-3\2971e8222b6d8953a900638ba0d233ca\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
-204            android:name="com.google.android.gms.version"
-204-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\HieuDoan\.gradle\caches\transforms-3\2971e8222b6d8953a900638ba0d233ca\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
-205            android:value="@integer/google_play_services_version" />
-205-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\HieuDoan\.gradle\caches\transforms-3\2971e8222b6d8953a900638ba0d233ca\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
-206    </application>
-207
-208</manifest>
+171        <receiver
+171-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:29:9-33:20
+172            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+172-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:30:13-85
+173            android:enabled="true"
+173-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:31:13-35
+174            android:exported="false" >
+174-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:32:13-37
+175        </receiver>
+176
+177        <service
+177-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:35:9-38:40
+178            android:name="com.google.android.gms.measurement.AppMeasurementService"
+178-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:36:13-84
+179            android:enabled="true"
+179-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:37:13-35
+180            android:exported="false" />
+180-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:38:13-37
+181        <service
+181-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:39:9-43:72
+182            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+182-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:40:13-87
+183            android:enabled="true"
+183-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:41:13-35
+184            android:exported="false"
+184-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:42:13-37
+185            android:permission="android.permission.BIND_JOB_SERVICE" />
+185-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\HieuDoan\.gradle\caches\transforms-3\a49627aa386a2220334c1bd469bf545a\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:43:13-69
+186
+187        <uses-library
+187-->[androidx.window:window:1.0.0-beta04] C:\Users\HieuDoan\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+188            android:name="androidx.window.extensions"
+188-->[androidx.window:window:1.0.0-beta04] C:\Users\HieuDoan\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+189            android:required="false" />
+189-->[androidx.window:window:1.0.0-beta04] C:\Users\HieuDoan\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+190        <uses-library
+190-->[androidx.window:window:1.0.0-beta04] C:\Users\HieuDoan\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+191            android:name="androidx.window.sidecar"
+191-->[androidx.window:window:1.0.0-beta04] C:\Users\HieuDoan\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+192            android:required="false" />
+192-->[androidx.window:window:1.0.0-beta04] C:\Users\HieuDoan\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+193        <uses-library
+193-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\HieuDoan\.gradle\caches\transforms-3\29b2afadb5d762db459808f64547fddf\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:23:9-25:40
+194            android:name="android.ext.adservices"
+194-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\HieuDoan\.gradle\caches\transforms-3\29b2afadb5d762db459808f64547fddf\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:24:13-50
+195            android:required="false" />
+195-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\HieuDoan\.gradle\caches\transforms-3\29b2afadb5d762db459808f64547fddf\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:25:13-37
+196
+197        <activity
+197-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\HieuDoan\.gradle\caches\transforms-3\e0a8793a7a85d6e071b7a743c9adf075\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+198            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+198-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\HieuDoan\.gradle\caches\transforms-3\e0a8793a7a85d6e071b7a743c9adf075\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+199            android:exported="false"
+199-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\HieuDoan\.gradle\caches\transforms-3\e0a8793a7a85d6e071b7a743c9adf075\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+200            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+200-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\HieuDoan\.gradle\caches\transforms-3\e0a8793a7a85d6e071b7a743c9adf075\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+201
+202        <meta-data
+202-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\HieuDoan\.gradle\caches\transforms-3\2971e8222b6d8953a900638ba0d233ca\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+203            android:name="com.google.android.gms.version"
+203-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\HieuDoan\.gradle\caches\transforms-3\2971e8222b6d8953a900638ba0d233ca\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+204            android:value="@integer/google_play_services_version" />
+204-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\HieuDoan\.gradle\caches\transforms-3\2971e8222b6d8953a900638ba0d233ca\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+205    </application>
+206
+207</manifest>
