@@ -1,5 +1,4 @@
 // ignore_for_file: curly_braces_in_flow_control_structures
-import 'dart:io';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
