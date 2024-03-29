@@ -1,10 +1,11 @@
-// ignore_for_file: library_private_types_in_public_api, prefer_const_literals_to_create_immutables, prefer_const_constructors, prefer_final_fields, unused_import, avoid_print
+// ignore_for_file: library_private_types_in_public_api, prefer_const_literals_to_create_immutables, prefer_const_constructors, prefer_final_fields, unused_import, avoid_print, deprecated_member_use
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:music_player_app/reuseable_widgets/reuseable_widget.dart';
 import 'package:music_player_app/screens/home_screen.dart';
 import 'package:music_player_app/utils/color_utils.dart';
+import 'package:firebase_database/firebase_database.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({Key? key}) : super(key: key);
@@ -17,6 +18,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
   TextEditingController _passwordTextController = TextEditingController();
   TextEditingController _emailTextController = TextEditingController();
   TextEditingController _userNameTextController = TextEditingController();
+  final databaseReference =
+      FirebaseDatabase.instance.reference().child("Users");
 
   @override
   Widget build(BuildContext context) {
@@ -63,15 +66,30 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   height: 20,
                 ),
                 signInSignUpButton(context, false, () {
+                  // Lưu email vào Firebase Authentication
                   FirebaseAuth.instance
                       .createUserWithEmailAndPassword(
                           email: _emailTextController.text,
                           password: _passwordTextController.text)
-                      .then((value) {
+                      .then((UserCredential userCredential) {
                     print("Created New Account ");
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => HomeScreen()));
-                  }).onError((error, stackTrace) {
+                    // Lấy UID của người dùng từ UserCredential
+                    String userUid = userCredential.user!.uid;
+                    // Lưu tên người dùng và email vào Firebase Database
+                    databaseReference.child(userUid).set({
+                      'username': _userNameTextController.text,
+                      'email': _emailTextController.text,
+                      'address': 'null'
+                    }).then((_) {
+                      print("Đã lưu thông tin người dùng vào Firebase.");
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => HomeScreen()));
+                    }).catchError((error) {
+                      print("Lỗi khi lưu tên người dùng vào Firebase: $error");
+                    });
+                  }).catchError((error) {
                     print("Error ${error.toString()}");
                   });
                 })

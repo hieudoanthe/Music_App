@@ -7,6 +7,7 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:music_player_app/core/controllers.dart';
 import 'package:music_player_app/screens/home_screen.dart';
+import 'package:music_player_app/screens/profile_screen.dart';
 import 'package:music_player_app/screens/signin_screen.dart';
 import 'package:music_player_app/shared_widgets/song_item_card.dart';
 
@@ -37,6 +38,22 @@ class _AllSongsScreenState extends State<AllSongsScreen> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
+                        IconButton(
+                          onPressed: () {
+                            print("Profile");
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => ProfileScreen(),
+                              ),
+                            );
+                          },
+                          icon: Icon(
+                            Icons.account_circle,
+                            color: Colors.white,
+                            size: 45,
+                          ),
+                        ),
                         Text(
                           'All Songs',
                           style: GoogleFonts.poppins(
@@ -46,34 +63,16 @@ class _AllSongsScreenState extends State<AllSongsScreen> {
                           ),
                           textAlign: TextAlign.left,
                         ),
-                        TextButton(
-                          onPressed: () {
-                            FirebaseAuth.instance.signOut().then((value) {
-                              print("Sign Out");
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => SignInScreen()));
-                            });
-                          },
-                          child: Text(
-                            'Logout',
-                            style: TextStyle(
-                              color: MyColors.tertiaryColor.withOpacity(0.7),
-                              fontSize: 20,
-                            ),
-                          ),
-                        ),
                       ],
                     ),
                   ),
-                  Text(
-                    audioPlayerController.listOfSongs.length.toString(),
-                    style: TextStyle(
-                      color: MyColors.tertiaryColor.withOpacity(0),
-                      fontSize: 16,
-                    ),
-                  )
+                  // Text(
+                  //   audioPlayerController.listOfSongs.length.toString(),
+                  //   style: TextStyle(
+                  //     color: MyColors.tertiaryColor.withOpacity(0),
+                  //     fontSize: 16,
+                  //   ),
+                  // )
                 ],
               ),
             );
