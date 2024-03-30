@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, avoid_print, deprecated_member_use
+// ignore_for_file: prefer_const_constructors, avoid_print, deprecated_member_use, avoid_init_to_null, library_private_types_in_public_api, use_key_in_widget_constructors
 
 import 'dart:io';
 
@@ -7,7 +7,8 @@ import 'package:image_picker/image_picker.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:music_player_app/screens/home_screen.dart';
-import 'package:music_player_app/screens/name_user_sceen.dart';
+import 'package:music_player_app/screens/email_user_sceen.dart';
+import 'package:music_player_app/screens/name_user_screen.dart';
 import 'package:music_player_app/screens/signin_screen.dart';
 
 class ProfileScreen extends StatefulWidget {
@@ -112,7 +113,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => UsernameScreen()),
+                      MaterialPageRoute(
+                          builder: (context) => NameDisplayScreenState()),
                     );
                   },
                 ),
@@ -120,7 +122,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   title: Text('Email', style: TextStyle(color: Colors.white)),
                   trailing: Icon(Icons.arrow_forward, color: Colors.white),
                   onTap: () {
-                    // Action when Email is tapped
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => EmailDisplayScreen()),
+                    );
                   },
                 ),
                 ListTile(
