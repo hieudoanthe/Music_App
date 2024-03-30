@@ -9,13 +9,15 @@ import 'package:music_player_app/models/song.dart';
 import 'package:music_player_app/screens/home_screen.dart';
 
 class NowPLayingScreen extends StatefulWidget {
-  const NowPLayingScreen({super.key});
+  const NowPLayingScreen({Key? key}) : super(key: key);
 
   @override
   State<NowPLayingScreen> createState() => _NowPLayingScreenState();
 }
 
 class _NowPLayingScreenState extends State<NowPLayingScreen> {
+  bool isFavorite = false; // Trạng thái của nút yêu thích
+
   @override
   Widget build(BuildContext context) {
     final AudioPlayerController audioPLayerController = Get.find();
@@ -24,7 +26,8 @@ class _NowPLayingScreenState extends State<NowPLayingScreen> {
         decoration: BoxDecoration(
           color: Colors.transparent,
           image: DecorationImage(
-            image: NetworkImage(audioPLayerController.song.value?.imageUrl ?? ''),
+            image:
+                NetworkImage(audioPLayerController.song.value?.imageUrl ?? ''),
             fit: BoxFit.cover,
           ),
         ),
@@ -49,9 +52,7 @@ class _NowPLayingScreenState extends State<NowPLayingScreen> {
                     children: [
                       IconButton(
                         onPressed: () {
-                          Get.back(
-                            result: 's'
-                          );
+                          Get.back(result: 's');
                         },
                         icon: const Icon(
                           Icons.arrow_back_ios,
@@ -101,7 +102,9 @@ class _NowPLayingScreenState extends State<NowPLayingScreen> {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(500),
                               image: DecorationImage(
-                                image: NetworkImage(audioPLayerController.song.value?.imageUrl ?? ''),
+                                image: NetworkImage(audioPLayerController
+                                        .song.value?.imageUrl ??
+                                    ''),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -118,27 +121,40 @@ class _NowPLayingScreenState extends State<NowPLayingScreen> {
                             width: 150,
                             height: 35,
                             child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                setState(() {
+                                  // Khi nút được nhấn, chuyển đổi trạng thái của nút yêu thích
+                                  isFavorite = !isFavorite;
+                                });
+                              },
                               style: ButtonStyle(
-                                backgroundColor: MaterialStateProperty.all(Colors.transparent), // No background color
-                                shadowColor: MaterialStateProperty.all(Colors.transparent), // No shadow
+                                backgroundColor: MaterialStateProperty.all(
+                                    Colors.transparent),
+                                shadowColor: MaterialStateProperty.all(
+                                    Colors.transparent),
                                 elevation: MaterialStateProperty.all(0),
                                 shape: MaterialStateProperty.all(
                                   RoundedRectangleBorder(
-                                    side: const BorderSide(color: Colors.white, width: 2),
+                                    side: const BorderSide(
+                                        color: Colors.white, width: 2),
                                     borderRadius: BorderRadius.circular(20),
                                   ),
                                 ),
                               ),
                               child: Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
                                 children: [
-                                  const Icon(
-                                    Icons.favorite_border_outlined,
-                                    color: Colors.white,
+                                  // Dựa vào trạng thái, chọn biểu tượng yêu thích phù hợp
+                                  Icon(
+                                    isFavorite
+                                        ? Icons.favorite
+                                        : Icons.favorite_border_outlined,
+                                    color:
+                                        isFavorite ? Colors.red : Colors.white,
                                   ),
                                   Text(
-                                    "Follow",
+                                    isFavorite ? "Following" : "Follow",
                                     style: GoogleFonts.poppins(
                                       color: Colors.white,
                                       fontWeight: FontWeight.w500,
@@ -158,7 +174,8 @@ class _NowPLayingScreenState extends State<NowPLayingScreen> {
                             child: ElevatedButton(
                               onPressed: () {},
                               style: ButtonStyle(
-                                backgroundColor: MaterialStateProperty.all(MyColors.secondaryColor),
+                                backgroundColor: MaterialStateProperty.all(
+                                    MyColors.secondaryColor),
                                 shape: MaterialStateProperty.all(
                                   RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(20),
@@ -166,7 +183,8 @@ class _NowPLayingScreenState extends State<NowPLayingScreen> {
                                 ),
                               ),
                               child: Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
                                 children: [
                                   const Icon(
                                     Icons.shuffle,
@@ -214,7 +232,8 @@ class _NowPLayingScreenState extends State<NowPLayingScreen> {
                         children: [
                           Obx(
                             () => Text(
-                              formatDuration(audioPLayerController.position.value.inMilliseconds),
+                              formatDuration(audioPLayerController
+                                  .position.value.inMilliseconds),
                               style: GoogleFonts.poppins(
                                 color: Colors.white,
                                 fontSize: 14,
@@ -228,26 +247,35 @@ class _NowPLayingScreenState extends State<NowPLayingScreen> {
                               () => SliderTheme(
                                 data: SliderTheme.of(context).copyWith(
                                   trackHeight: 2.0,
-                                  thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 5.0),
-                                  overlayShape: const RoundSliderOverlayShape(overlayRadius: 11.0),
+                                  thumbShape: const RoundSliderThumbShape(
+                                      enabledThumbRadius: 5.0),
+                                  overlayShape: const RoundSliderOverlayShape(
+                                      overlayRadius: 11.0),
                                 ),
                                 child: Slider(
-                                  value: audioPLayerController.position.value.inSeconds.toDouble(),
-                                  max: audioPLayerController.duration.value.inSeconds.toDouble(),
+                                  value: audioPLayerController
+                                      .position.value.inSeconds
+                                      .toDouble(),
+                                  max: audioPLayerController
+                                      .duration.value.inSeconds
+                                      .toDouble(),
                                   onChanged: (value) async {
-                                    await audioPLayerController.seek(value: value);
+                                    await audioPLayerController.seek(
+                                        value: value);
                                     await audioPLayerController.resume();
                                   },
                                   inactiveColor: Colors.white.withOpacity(0.3),
                                   thumbColor: Colors.white,
                                   activeColor: MyColors.secondaryColor,
-                                  overlayColor: MaterialStatePropertyAll(Colors.white.withOpacity(0.4)),
+                                  overlayColor: MaterialStateProperty.all(
+                                      Colors.white.withOpacity(0.4)),
                                 ),
                               ),
                             ),
                           ),
                           Text(
-                            formatDuration(audioPLayerController.duration.value.inMilliseconds),
+                            formatDuration(audioPLayerController
+                                .duration.value.inMilliseconds),
                             style: GoogleFonts.poppins(
                               color: Colors.white,
                               fontSize: 14,
@@ -263,17 +291,27 @@ class _NowPLayingScreenState extends State<NowPLayingScreen> {
                           IconButton(
                             onPressed: () async {
                               if (audioPLayerController.inSearchMode.value) {
-                                if (audioPLayerController.currentIndex.value != 0) {
-                                  audioPLayerController.setCurrentIndex(audioPLayerController.currentIndex.value - 1);
-                                  Song newSong = audioPLayerController.searchedSongs[audioPLayerController.currentIndex.value];
+                                if (audioPLayerController.currentIndex.value !=
+                                    0) {
+                                  audioPLayerController.setCurrentIndex(
+                                      audioPLayerController.currentIndex.value -
+                                          1);
+                                  Song newSong = audioPLayerController
+                                          .searchedSongs[
+                                      audioPLayerController.currentIndex.value];
                                   audioPLayerController.setSong(newSong);
                                   await audioPLayerController.play();
                                   setState(() {});
                                 }
                               } else {
-                                if (audioPLayerController.currentIndex.value != 0) {
-                                  audioPLayerController.setCurrentIndex(audioPLayerController.currentIndex.value - 1);
-                                  Song newSong = audioPLayerController.listOfSongs[audioPLayerController.currentIndex.value];
+                                if (audioPLayerController.currentIndex.value !=
+                                    0) {
+                                  audioPLayerController.setCurrentIndex(
+                                      audioPLayerController.currentIndex.value -
+                                          1);
+                                  Song newSong = audioPLayerController
+                                          .listOfSongs[
+                                      audioPLayerController.currentIndex.value];
                                   audioPLayerController.setSong(newSong);
                                   await audioPLayerController.play();
                                   setState(() {});
@@ -304,7 +342,9 @@ class _NowPLayingScreenState extends State<NowPLayingScreen> {
                             },
                             icon: Obx(
                               () => Icon(
-                                (audioPLayerController.isPlaying.value) ? Icons.pause_circle : Icons.play_circle,
+                                (audioPLayerController.isPlaying.value)
+                                    ? Icons.pause_circle
+                                    : Icons.play_circle,
                                 color: Colors.white,
                                 size: 80,
                               ),
@@ -321,18 +361,30 @@ class _NowPLayingScreenState extends State<NowPLayingScreen> {
                           IconButton(
                             onPressed: () async {
                               if (audioPLayerController.inSearchMode.value) {
-                                if (audioPLayerController.currentIndex.value != audioPLayerController.searchedSongs.length - 1) {
-                                  audioPLayerController.setCurrentIndex(audioPLayerController.currentIndex.value + 1);
+                                if (audioPLayerController.currentIndex.value !=
+                                    audioPLayerController.searchedSongs.length -
+                                        1) {
+                                  audioPLayerController.setCurrentIndex(
+                                      audioPLayerController.currentIndex.value +
+                                          1);
 
-                                  Song newSong = audioPLayerController.searchedSongs[audioPLayerController.currentIndex.value];
+                                  Song newSong = audioPLayerController
+                                          .searchedSongs[
+                                      audioPLayerController.currentIndex.value];
                                   audioPLayerController.setSong(newSong);
                                   await audioPLayerController.play();
                                   setState(() {});
                                 }
                               } else {
-                                if (audioPLayerController.currentIndex.value != audioPLayerController.listOfSongs.length - 1) {
-                                  audioPLayerController.setCurrentIndex(audioPLayerController.currentIndex.value + 1);
-                                  Song newSong = audioPLayerController.listOfSongs[audioPLayerController.currentIndex.value];
+                                if (audioPLayerController.currentIndex.value !=
+                                    audioPLayerController.listOfSongs.length -
+                                        1) {
+                                  audioPLayerController.setCurrentIndex(
+                                      audioPLayerController.currentIndex.value +
+                                          1);
+                                  Song newSong = audioPLayerController
+                                          .listOfSongs[
+                                      audioPLayerController.currentIndex.value];
                                   audioPLayerController.setSong(newSong);
                                   await audioPLayerController.play();
                                   setState(() {});
